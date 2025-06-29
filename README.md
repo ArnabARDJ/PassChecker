@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">PassChecker</h1>
-<h3 align="center">Guarding Your Inputs with Every Keystroke.</h3>
+<h3 align="center">Guarding Your Inputs with Every Keystroke</h3>
 
 An interactive Password Strength Evaluator with live feedback &amp; Techy UI
 
