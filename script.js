@@ -8,7 +8,7 @@ const lowercaseReq = document.getElementById("lowercase").querySelector('span:fi
 const numberReq = document.getElementById("number").querySelector('span:first-child');
 const specialCharReq = document.getElementById("special").querySelector('span:first-child');
 
-const lengthRegex = /.{8,}/;
+const lengthRegex = /.{12,}/;
 const uppercaseRegex = /[A-Z]/;
 const lowercaseRegex = /[a-z]/;
 const numberRegex = /[0-9]/;
