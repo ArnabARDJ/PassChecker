@@ -95,5 +95,27 @@ function copyPassword() {
     });
 }
 
+const text = "Waiting to see your Strong Password ...";
+const typingElement = document.getElementById("typing-text");
+let index = 0;
 
-updateStrength();
+function typeNextChar() {
+    if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeNextChar, 90);
+    }
+}
+
+window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    typeNextChar();
+
+    setTimeout(() => {
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500);
+    }, 4000);
+    updateStrength();
+});
