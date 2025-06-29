@@ -78,10 +78,13 @@ function togglePasswordVisiblity() {
 
 function copyPassword() {
     const password = passwordInput.value;
+    const tooltip = document.getElementById("copy-tooltip");
+
     if (!password) return;
 
     navigator.clipboard.writeText(password).then(() => {
-        const tooltip = document.getElementById("copy-tooltip");
+        tooltip.classList.remove("show");
+        void tooltip.offsetWidth;
         tooltip.classList.add("show");
 
         setTimeout(() => {
@@ -91,5 +94,6 @@ function copyPassword() {
         alert("Failed to copy password.");
     });
 }
+
 
 updateStrength();
