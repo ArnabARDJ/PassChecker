@@ -3,53 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Password Strength Checker</title>
+  <title>PassChecker - Guarding Your Inputs with Every Keystroke</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>Password Strength Checker</h1>
+  <div class="main-wrapper">
+    <div class="container">
+      <h1>PassChecker</h1>
 
-    <div class="password-container">
+      <div class="password-container">
         <input type="password" id="password" placeholder="Enter Your Password">
-        
+
         <span class="toggle-password" onclick="togglePasswordVisiblity()">
-            <i class="fa-solid fa-eye" id="toggle-icon"></i>
+          <i class="fa-solid fa-eye" id="toggle-icon"></i>
         </span>
-    
+
         <button class="copy-password" onclick="copyPassword()" title="Copy Password">
-            <i class="fa-regular fa-copy"></i>
-            <span id="copy-tooltip" class="tooltip-text">Copied!</span>
+          <i class="fa-regular fa-copy"></i>
+          <span id="copy-tooltip" class="tooltip-text">Copied!</span>
         </button>
-    </div>
-    
+      </div>
 
-    <div class="strength-meter">
-      <div class="strength-meter-fill" id="strength-meter-fill"></div>
+      <div class="strength-meter">
+        <div class="strength-meter-fill" id="strength-meter-fill"></div>
+      </div>
+
+      <div class="strength-text" id="strength-text">Password Strength</div>
+
+      <div class="requirement" id="length">
+        <span class="x-icon">✘</span>
+        <span>At Least 12 Characters</span>
+      </div>
+      <div class="requirement" id="uppercase">
+        <span class="x-icon">✘</span>
+        <span>At Least 1 Uppercase Letter</span>
+      </div>
+      <div class="requirement" id="lowercase">
+        <span class="x-icon">✘</span>
+        <span>At Least 1 Lowercase Letter</span>
+      </div>
+      <div class="requirement" id="number">
+        <span class="x-icon">✘</span>
+        <span>At Least 1 Number</span>
+      </div>
+      <div class="requirement" id="special">
+        <span class="x-icon">✘</span>
+        <span>At Least 1 Special Character</span>
+      </div>
     </div>
 
-    <div class="strength-text" id="strength-text">Password Strength</div>
-
-    <div class="requirement" id="length">
-      <span class="x-icon">✘</span>
-      <span>At Least 12 Characters</span>
-    </div>
-    <div class="requirement" id="uppercase">
-      <span class="x-icon">✘</span>
-      <span>At Least 1 Uppercase Letter</span>
-    </div>
-    <div class="requirement" id="lowercase">
-      <span class="x-icon">✘</span>
-      <span>At Least 1 Lowercase Letter</span>
-    </div>
-    <div class="requirement" id="number">
-      <span class="x-icon">✘</span>
-      <span>At Least 1 Number</span>
-    </div>
-    <div class="requirement" id="special">
-      <span class="x-icon">✘</span>
-      <span>At Least 1 Special Character</span>
+    <div class="illustration">
+      <img src="BANNER-IMAGE_PassChecker.png" alt="Robot and Shield Illustration">
     </div>
   </div>
 
