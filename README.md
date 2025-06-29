@@ -1,6 +1,6 @@
 # PassChecker
 <p align="center">
-  <img src="LOGO_PassChecker.png" alt="PassChecker Logo" width="200"/>
+  <img src="LOGO_PassChecker.png" alt="PassChecker Logo" width="500"/>
 </p>
 
 <h1 align="center">PassChecker</h1>
